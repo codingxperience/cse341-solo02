@@ -1,6 +1,6 @@
 // LOCALHOST 
 
-### 
+### get all contacts
 GET http://localhost:8080/contacts 
 
 ### 
@@ -12,3 +12,22 @@ GET http://localhost:8080/contacts/63c36646b5b5786a26c58ea9
 
 ### 
 GET http://localhost:8080/contacts/63c36646b5b5786a26c58eaa
+
+
+// PRODUCTION
+
+### get all contacts
+GET https://offs341-02.onrender.com/contacts 
+
+### 
+GET https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58ea8
+
+### 
+GET https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58ea9
+
+
+### 
+GET https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58eaa
+
+
+
