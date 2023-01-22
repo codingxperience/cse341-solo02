@@ -73,6 +73,6 @@ Content-Type: application/json
 }
 
 ### DELETE contact
-DELETE  https://offs341-02.onrender.com/63ccced7e6512360e4dd6989
+DELETE  https://offs341-02.onrender.com/contacts/63ccced7e6512360e4dd6989
 
 
