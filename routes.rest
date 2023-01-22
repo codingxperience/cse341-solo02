@@ -3,15 +3,37 @@
 ### get all contacts
 GET http://localhost:8080/contacts 
 
-### 
-GET http://localhost:8080/contacts/63c36646b5b5786a26c58ea8
+### get contact by Id
+GET http://localhost:8080/contacts/63ccb350332739591b04b95e
 
-### 
-GET http://localhost:8080/contacts/63c36646b5b5786a26c58ea9
+### create contact
+POST  http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Fred",
+  "lastName": "Okorio",
+  "email": "send2fredokorio@test.com",
+  "favoriteColor": "Black",
+  "birthday": "23/12/90" 
+}
 
 
-### 
-GET http://localhost:8080/contacts/63c36646b5b5786a26c58eaa
+### PUT contact
+PUT  http://localhost:8080/contacts/63c36646b5b5786a26c58eaa
+Content-Type: application/json
+
+{
+  "_id": "63c36646b5b5786a26c58eaa",
+  "firstName": "Cassandra",
+  "lastName": "Anderson",
+  "email": "andersonC@test.com",
+  "favoriteColor": "Indigo",
+  "birthday": "02/22/95"
+}
+
+### DELETE contact
+GET http://localhost:8080/contacts/63ccb350332739591b04b95e
 
 
 // PRODUCTION
@@ -19,15 +41,34 @@ GET http://localhost:8080/contacts/63c36646b5b5786a26c58eaa
 ### get all contacts
 GET https://offs341-02.onrender.com/contacts 
 
-### 
+### get contact by Id
 GET https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58ea8
 
-### 
-GET https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58ea9
+### create contact
+POST  http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Fred",
+  "lastName": "Okorio",
+  "email": "send2fredokorio@test.com",
+  "favoriteColor": "Black",
+  "birthday": "23/12/90" 
+}
 
 
-### 
-GET https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58eaa
+### PUT contact
+PUT  http://localhost:8080/contacts/63c36646b5b5786a26c58eaa
+Content-Type: application/json
 
+{
+  "_id": "63c36646b5b5786a26c58eaa",
+  "firstName": "Cassandra",
+  "lastName": "Anderson",
+  "email": "andersonC@test.com",
+  "favoriteColor": "Indigo",
+  "birthday": "02/22/95"
+}
 
-
+### DELETE contact
+DELETE  http://localhost:8080/contacts/63ccb350332739591b04b95e

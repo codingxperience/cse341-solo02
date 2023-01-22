@@ -12,6 +12,10 @@ app.use((req, res, next) => {
 })
 app.use('/', require('./routes'));
 
+app.post('/contact', (req, res) => {
+  
+})
+
 mongodb.initDb((err, mongodb) => {
   if(err) {
     console.log(err);
