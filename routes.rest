@@ -44,8 +44,10 @@ GET https://offs341-02.onrender.com/contacts
 ### get contact by Id
 GET https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58ea8
 
+// PRODUCTION
+
 ### create contact
-POST  http://localhost:8080/contacts
+POST  https://offs341-02.onrender.com/contacts
 Content-Type: application/json
 
 {
@@ -58,17 +60,19 @@ Content-Type: application/json
 
 
 ### PUT contact
-PUT  http://localhost:8080/contacts/63c36646b5b5786a26c58eaa
+PUT  https://offs341-02.onrender.com/contacts/63c36646b5b5786a26c58eaa
 Content-Type: application/json
 
 {
   "_id": "63c36646b5b5786a26c58eaa",
   "firstName": "Cassandra",
   "lastName": "Anderson",
-  "email": "andersonC@test.com",
+  "email": "amazingwoman@test.com",
   "favoriteColor": "Indigo",
   "birthday": "02/22/95"
 }
 
 ### DELETE contact
-DELETE  http://localhost:8080/contacts/63ccb350332739591b04b95e
+DELETE  https://offs341-02.onrender.com/63ccced7e6512360e4dd6989
+
+
